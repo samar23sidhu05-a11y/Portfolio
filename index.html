@@ -3,76 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev Portfolio</title>
+  <title>Samarveer Kaur | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Navbar -->
 <nav class="navbar">
-  <h2>Dev.Portfolio</h2>
-
-  <ul>
+  <h2 class="logo">Samarveer.Dev</h2>
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#qualities">Qualities</a></li>
   </ul>
-
-  <button id="toggle">🌙</button>
+  <button id="toggle" aria-label="Toggle Dark Mode">🌙</button>
 </nav>
 
-<!-- Hero -->
-<section class="hero fade">
-  <h1>Hi, I'm <span>Samar</span></h1>
-  <p>I build elegant, high-performance web applications.</p>
-  <a href="#projects" class="btn">View My Work</a>
-</section>
-
-<!-- About -->
-<section id="about" class="section fade">
-  <h2>About Me</h2>
-  <p>
-    I’m an aspiring developer focused on AI, Web Development, and building real-world solutions.
-  </p>
-</section>
-
-<!-- Education -->
-<section id="education" class="section fade">
-  <h2>Education</h2>
-  <div class="card">
-    <h3>MTech in AI</h3>
-    <p>2025 - Present</p>
+<header class="hero fade">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Samarveer Kaur</span></h1>
+    <p>Information Technology Student at NIT Jalandhar | Problem Solver | Aspiring Developer</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn">Explore My Work</a>
+      <a href="https://www.linkedin.com/in/samarveer-kaur-5168673b0/" target="_blank" class="btn btn-outline">LinkedIn</a>
+    </div>
   </div>
-  <div class="card">
-    <h3>BTech in Computer Science</h3>
-    <p>2021 - 2025</p>
-  </div>
-</section>
+</header>
 
-<!-- Projects -->
-<section id="projects" class="section fade">
-  <h2>Projects</h2>
+<main>
+  <section id="about" class="section fade">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <p>
+        I am <strong>Samarveer Kaur</strong>, a driven Information Technology student from <strong>Bathinda, Punjab</strong>, currently pursuing my Bachelor’s degree at <strong>Dr. B.R. Ambedkar National Institute of Technology, Jalandhar</strong>. My journey into technology began with a deep fascination for how logic and mathematics solve tangible problems—a passion that helped me secure a <strong>98.3 percentile in JEE Mains</strong>.
+      </p>
+      <p>
+        Today, I focus on building efficient, user-centric applications and exploring the vast potential of <strong>Artificial Intelligence</strong> and <strong>Modern Web Development</strong>. Being at a premier national institute has refined my ability to work in high-pressure environments and collaborate on complex technical challenges.
+      </p>
+      <p>
+        I am a lifelong learner who believes in writing clean, sustainable code and staying at the forefront of digital innovation. When I'm not coding, I'm usually exploring new tech stacks or analyzing data-driven solutions to improve everyday life.
+      </p>
+      
+      <div class="skills-grid">
+        <span class="skill-tag">Data Structures</span>
+        <span class="skill-tag">Algorithms</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Web Development</span>
+        <span class="skill-tag">C++</span>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Parkinson Detection</h3>
-    <p>ML model to detect Parkinson’s disease.</p>
-  </div>
+  <section id="education" class="section fade">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="card">
+        <span class="date">2025 - Present</span>
+        <h3>B.Tech in Information Technology</h3>
+        <p>Dr. B.R. Ambedkar National Institute of Technology, Jalandhar</p>
+        <p class="highlight">JEE Mains: 98.3 Percentile</p>
+      </div>
+      <div class="card">
+        <span class="date">Schooling</span>
+        <h3>Mount Litera Zee School</h3>
+        <p>Bathinda, Punjab</p>
+        <p>Completed Middle and High Schooling with a strong academic foundation in Science and Mathematics.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Portfolio Website</h3>
-    <p>Modern responsive portfolio.</p>
-  </div>
+  <section id="qualities" class="section fade">
+    <h2>Developer Qualities</h2>
+    <div class="qualities-grid">
+      <div class="quality-item">
+        <strong>Analytical Problem Solving</strong>
+        <p>Expertise in breaking down complex logic, honed through intensive competitive engineering exams.</p>
+      </div>
+      <div class="quality-item">
+        <strong>Technical Agility</strong>
+        <p>A quick learner capable of adapting to new frameworks and evolving IT infrastructures.</p>
+      </div>
+      <div class="quality-item">
+        <strong>Attention to Detail</strong>
+        <p>Focused on writing readable, maintainable code with a strong emphasis on edge-case handling.</p>
+      </div>
+      <div class="quality-item">
+        <strong>Collaborative Mindset</strong>
+        <p>Thrives in team environments, contributing through effective communication and peer reviews.</p>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <section id="projects" class="section fade">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="card project-card">
+        <div class="project-icon">🧠</div>
+        <h3>Parkinson Detection</h3>
+        <p>Leveraging Machine Learning architectures to analyze biological data for early medical diagnosis.</p>
+      </div>
+      <div class="card project-card">
+        <div class="project-icon">💻</div>
+        <h3>Dev Portfolio</h3>
+        <p>A high-performance, responsive space showcasing modern web standards and fluid animations.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-<!-- Contact -->
-<section id="contact" class="section fade">
-  <h2>Contact</h2>
-  <p>Email: samar23sidhu05@gmail.com</p>
-  <p>LinkedIn: linkedin.com/in/yourprofile</p>
-</section>
+<footer>
+  <p>&copy; 2026 Samarveer Kaur | <a href="https://www.linkedin.com/in/samarveer-kaur-5168673b0/" target="_blank">LinkedIn</a></p>
+</footer>
 
 <script src="script.js"></script>
 </body>
